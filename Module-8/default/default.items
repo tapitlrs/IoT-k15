@@ -1,0 +1,12 @@
+Group C112 "C112 Room"
+//Light Control Panel
+Switch Light1 "Light1" <light> (C112) {channel = "mqtt:topic:hivemqbroker:nodemcu:light"}
+Switch Light2 "Light2" <light> (C112)
+
+//Control Panel
+Switch Fan "Fan"  	<fan_ceiling> 	(C112) 
+Switch Ac "Ac"  	<player> 		(C112) 
+
+//Subscription Panel
+Number Temperature "Temperature [%.1f C]" 	<temperature> (C112) {channel = "mqtt:topic:hivemqbroker:nodemcu:temperature"}
+Number Human "Human [%d]" 					<parents_1_3> (C112) 
