@@ -1,0 +1,11 @@
+bai1: Lập trình ESP8266 là một Subscriber thực hiện subscribe Topic có cấu trúc như sau "TenHocVien/Light/Command". Dùng một MQTT Client bất kì khác (vd: MQTT.fx) đóng vai trò là Publisher để điều khiển LED GPIO16, nếu publish '1' thì LED sáng, '0' thì LED tắt. Mặt khác khi nhấn nút GPIO0 sẽ thay đổi trạng thái của LED và publish trạng thái của LED: "LEDON" hoặc "LEDOFF" lên Topic có định dạng "TenHocVien/Light/Event" đã subscribe trước đó.
+bai2: Lập trình NodeMCU, subscribe vào topic "TenHocVien/Light/Command", khi có một client bất kỳ (vd MQTT.fx) publish vào topic với dữ liệu là chuỗi JSON có định dạng:
+{
+"status": state,
+}
+NodeMCU sẽ nhận được và thay đổi trạng thái Led theo giá trị trong trường state ("on" hoặc "off").
+Mặt khác, khi nhấn nút trên NodeMCU sẽ publish đến topic "ESP8266/light/reported" giá trị của Led trong chuỗi JSON với định dạng:
+{
+"status": state,
+}
+Trong đó state có giá trị (on hoặc off), sử dụng MQTT.fx subscribe vào cùng topic để bắt dữ liệu gửi lên kiểm tra kết quả.

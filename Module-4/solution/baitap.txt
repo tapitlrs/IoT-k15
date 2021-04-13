@@ -1,0 +1,5 @@
+bai1: Gửi dữ liệu lên thingspeak bằng esp8266 để vẽ đồ thị hình sin sử dụng phương pháp http basic
+bai2: làm lại bài 1 tuy nhiên sử dụng thư viện thingspeak được đính kèm bên dưới
+bai3: Viết một chương trình Javascript để tìm ra kí tự có số lần lặp lại nhều nhất trong mảng bất kì, sau đó in lên giao diện web kí tự đó và số lần lặp lại của nó
+VD: với mảng sau: var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+==> kết quả in lên giao diện: a (5 times)
