@@ -1,0 +1,425 @@
+
+
+
+
+
+
+
+Started logging.
+
+>>>
+Content-Length: 2162
+
+{"method":"initialize","params":{"processId":2708,"rootPath":"C:\\Users\\vantr\\AppData\\Local\\Temp\\arduino-language-server996753751\\sketch","rootUri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch","clientInfo":{"name":"vscode","version":"1.50.0"},"trace":"off","initializationOptions":{},"capabilities":{"workspace":{"workspaceEdit":{"documentChanges":true,"resourceOperations":["create","rename","delete"]},"applyEdit":true,"symbol":{"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]}},"executeCommand":{"dynamicRegistration":true},"didChangeWatchedFiles":{"dynamicRegistration":true},"workspaceFolders":true,"configuration":true},"textDocument":{"declaration":{"linkSupport":true},"definition":{"linkSupport":true},"implementation":{"linkSupport":true,"dynamicRegistration":true},"typeDefinition":{"linkSupport":true},"synchronization":{"willSave":true,"didSave":true,"willSaveWaitUntil":true},"documentSymbol":{"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]},"hierarchicalDocumentSymbolSupport":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{"dynamicRegistration":true},"rename":{"dynamicRegistration":true,"prepareSupport":true},"codeAction":{"dynamicRegistration":true,"isPreferredSupport":true,"codeActionLiteralSupport":{"codeActionKind":{"valueSet":["","quickfix","refactor","refactor.extract","refactor.inline","refactor.rewrite","source","source.organizeImports"]}}},"completion":{"completionItem":{"documentationFormat":["markdown","plaintext"],"snippetSupport":true},"completionItemKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]},"contextSupport":true},"signatureHelp":{"signatureInformation":{"parameterInformation":{"labelOffsetSupport":true}}},"documentLink":{"dynamicRegistration":true,"tooltipSupport":true},"hover":{"contentFormat":["markdown","plaintext"]},"foldingRange":{"dynamicRegistration":true,"rangeLimit":5000,"lineFoldingOnly":true},"colorProvider":{"dynamicRegistration":true}},"window":{"workDoneProgress":true}}},"id":0,"jsonrpc":"2.0"}
+<<<
+Content-Length: 1671
+
+{"id":0,"jsonrpc":"2.0","result":{"capabilities":{"astProvider":true,"callHierarchyProvider":true,"codeActionProvider":{"codeActionKinds":["quickfix","refactor","info"]},"compilationDatabase":{"automaticReload":true},"completionProvider":{"allCommitCharacters":[" ","\t","(",")","[","]","{","}","<",">",":",";",",","+","-","/","*","%","^","&","#","?",".","=","\"","'","|"],"resolveProvider":false,"triggerCharacters":[".","<",">",":","\"","/"]},"declarationProvider":true,"definitionProvider":true,"documentFormattingProvider":true,"documentHighlightProvider":true,"documentLinkProvider":{"resolveProvider":false},"documentOnTypeFormattingProvider":{"firstTriggerCharacter":"\n","moreTriggerCharacter":[]},"documentRangeFormattingProvider":true,"documentSymbolProvider":true,"executeCommandProvider":{"commands":["clangd.applyFix","clangd.applyTweak"]},"hoverProvider":true,"implementationProvider":true,"memoryUsageProvider":true,"referencesProvider":true,"renameProvider":{"prepareProvider":true},"selectionRangeProvider":true,"semanticTokensProvider":{"full":{"delta":true},"legend":{"tokenModifiers":[],"tokenTypes":["variable","variable","parameter","function","method","function","property","variable","class","enum","enumMember","type","dependent","dependent","namespace","typeParameter","concept","type","macro","comment"]},"range":false},"signatureHelpProvider":{"triggerCharacters":["(",","]},"textDocumentSync":{"change":2,"openClose":true,"save":true},"typeHierarchyProvider":true,"workspaceSymbolProvider":true},"serverInfo":{"name":"clangd","version":"clangd version 12.0.0 (https://github.com/llvm/llvm-project e841bd5f335864b8c4d81cbf4df08460ef39f2ae)"}}}
+>>>
+Content-Length: 52
+
+{"method":"initialized","params":{},"jsonrpc":"2.0"}Content-Length: 1129
+
+{"method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp","languageId":"cpp","version":1,"text":"#include \u003cArduino.h\u003e\n#line 1 \"C:\\\\Users\\\\vantr\\\\AppData\\\\Local\\\\Temp\\\\.arduinoIDE-unsaved2021211-7092-1oxrxdk.4089\\\\sketch_mar11a\\\\sketch_mar11a.ino\"\n#line 1 \"C:\\\\Users\\\\vantr\\\\AppData\\\\Local\\\\Temp\\\\.arduinoIDE-unsaved2021211-7092-1oxrxdk.4089\\\\sketch_mar11a\\\\sketch_mar11a.ino\"\nvoid setup();\n#line 6 \"C:\\\\Users\\\\vantr\\\\AppData\\\\Local\\\\Temp\\\\.arduinoIDE-unsaved2021211-7092-1oxrxdk.4089\\\\sketch_mar11a\\\\sketch_mar11a.ino\"\nvoid loop();\n#line 1 \"C:\\\\Users\\\\vantr\\\\AppData\\\\Local\\\\Temp\\\\.arduinoIDE-unsaved2021211-7092-1oxrxdk.4089\\\\sketch_mar11a\\\\sketch_mar11a.ino\"\nvoid setup() {\n  // put your setup code here, to run once:\n  pinMode(16, OUTPUT);\n}\n\nvoid loop() {\n  // put your main code here, to run repeatedly:\n  digitalWrite(16, LOW);\n  delay(1000);\n  digitalWrite(16, HIGHT);\n  delay(1000);\n}\n\n"}},"jsonrpc":"2.0"}Content-Length: 203
+
+{"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp"}},"id":1,"jsonrpc":"2.0"}Content-Length: 306
+
+{"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp"},"range":{"start":{"line":17,"character":14},"end":{"line":17,"character":14}},"context":{"diagnostics":[]}},"id":2,"jsonrpc":"2.0"}
+<<<
+Content-Length: 111
+
+{"id":0,"jsonrpc":"2.0","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}
+>>>
+Content-Length: 38
+
+{"id":0,"result":null,"jsonrpc":"2.0"}
+<<<
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","percentage":0,"title":"indexing"}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/71","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/71","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/71","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/71","percentage":0}}}Content-Length: 158
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"1/71","percentage":1.408450704225352}}}Content-Length: 158
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"1/71","percentage":1.408450704225352}}}Content-Length: 158
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"2/71","percentage":2.816901408450704}}}Content-Length: 158
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"2/71","percentage":2.816901408450704}}}Content-Length: 158
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"3/71","percentage":4.225352112676056}}}Content-Length: 158
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"3/71","percentage":4.225352112676056}}}Content-Length: 1184
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[{"code":"drv_unknown_argument_with_suggestion","message":"Unknown argument '-mlongcalls'; did you mean '-mlong-calls'?","range":{"end":{"character":0,"line":0},"start":{"character":0,"line":0}},"severity":1,"source":"clang"},{"code":"drv_unknown_argument","message":"Unknown argument: '-mtext-section-literals'","range":{"end":{"character":0,"line":0},"start":{"character":0,"line":0}},"severity":1,"source":"clang"},{"code":"unknown_typename","message":"In included file: unknown type name '_read'\n\nC:\\Users\\vantr\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4/tools/sdk/libc/xtensa-lx106-elf/include\\sys/reent.h:195:36:\nnote: error occurred here","range":{"end":{"character":10,"line":0},"start":{"character":9,"line":0}},"severity":1,"source":"clang"},{"code":"undeclared_var_use","message":"Use of undeclared identifier 'HIGHT'","range":{"end":{"character":24,"line":16},"start":{"character":19,"line":16}},"severity":1,"source":"clang"}],"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp","version":1}}Content-Length: 778
+
+{"id":1,"jsonrpc":"2.0","result":[{"kind":12,"name":"setup","range":{"end":{"character":12,"line":3},"start":{"character":0,"line":3}},"selectionRange":{"end":{"character":10,"line":3},"start":{"character":5,"line":3}}},{"kind":12,"name":"loop","range":{"end":{"character":11,"line":5},"start":{"character":0,"line":5}},"selectionRange":{"end":{"character":9,"line":5},"start":{"character":5,"line":5}}},{"kind":12,"name":"setup","range":{"end":{"character":1,"line":10},"start":{"character":0,"line":7}},"selectionRange":{"end":{"character":10,"line":7},"start":{"character":5,"line":7}}},{"kind":12,"name":"loop","range":{"end":{"character":1,"line":18},"start":{"character":0,"line":12}},"selectionRange":{"end":{"character":9,"line":12},"start":{"character":5,"line":12}}}]}Content-Length: 36
+
+{"id":2,"jsonrpc":"2.0","result":[]}
+>>>
+Content-Length: 306
+
+{"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp"},"range":{"start":{"line":17,"character":14},"end":{"line":17,"character":14}},"context":{"diagnostics":[]}},"id":3,"jsonrpc":"2.0"}
+<<<
+Content-Length: 36
+
+{"id":3,"jsonrpc":"2.0","result":[]}
+>>>
+Content-Length: 203
+
+{"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp"}},"id":4,"jsonrpc":"2.0"}
+<<<
+Content-Length: 778
+
+{"id":4,"jsonrpc":"2.0","result":[{"kind":12,"name":"setup","range":{"end":{"character":12,"line":3},"start":{"character":0,"line":3}},"selectionRange":{"end":{"character":10,"line":3},"start":{"character":5,"line":3}}},{"kind":12,"name":"loop","range":{"end":{"character":11,"line":5},"start":{"character":0,"line":5}},"selectionRange":{"end":{"character":9,"line":5},"start":{"character":5,"line":5}}},{"kind":12,"name":"setup","range":{"end":{"character":1,"line":10},"start":{"character":0,"line":7}},"selectionRange":{"end":{"character":10,"line":7},"start":{"character":5,"line":7}}},{"kind":12,"name":"loop","range":{"end":{"character":1,"line":18},"start":{"character":0,"line":12}},"selectionRange":{"end":{"character":9,"line":12},"start":{"character":5,"line":12}}}]}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"4/71","percentage":5.6338028169014081}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"4/71","percentage":5.6338028169014081}}}Content-Length: 158
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"5/71","percentage":7.042253521126761}}}Content-Length: 158
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"5/71","percentage":7.042253521126761}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"6/71","percentage":8.4507042253521121}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"6/71","percentage":8.4507042253521121}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"7/71","percentage":9.8591549295774641}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"7/71","percentage":9.8591549295774641}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"8/71","percentage":11.267605633802816}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"8/71","percentage":11.267605633802816}}}Content-Length: 158
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"9/71","percentage":12.67605633802817}}}Content-Length: 158
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"9/71","percentage":12.67605633802817}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"10/71","percentage":14.084507042253522}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"10/71","percentage":14.084507042253522}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"11/71","percentage":15.492957746478874}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"11/71","percentage":15.492957746478874}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"12/71","percentage":16.901408450704224}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"12/71","percentage":16.901408450704224}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"13/71","percentage":18.309859154929576}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"13/71","percentage":18.309859154929576}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"14/71","percentage":19.718309859154928}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"14/71","percentage":19.718309859154928}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"15/71","percentage":21.12676056338028}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"15/71","percentage":21.12676056338028}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"16/71","percentage":22.535211267605632}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"16/71","percentage":22.535211267605632}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"17/71","percentage":23.943661971830984}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"17/71","percentage":23.943661971830984}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"18/71","percentage":25.35211267605634}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"18/71","percentage":25.35211267605634}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"19/71","percentage":26.760563380281692}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"19/71","percentage":26.760563380281692}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"20/71","percentage":28.169014084507044}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"20/71","percentage":28.169014084507044}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"21/71","percentage":29.577464788732396}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"21/71","percentage":29.577464788732396}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"22/71","percentage":30.985915492957748}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"22/71","percentage":30.985915492957748}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"23/71","percentage":32.394366197183096}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"23/71","percentage":32.394366197183096}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"24/71","percentage":33.802816901408448}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"24/71","percentage":33.802816901408448}}}Content-Length: 158
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"25/71","percentage":35.2112676056338}}}Content-Length: 158
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"25/71","percentage":35.2112676056338}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"26/71","percentage":36.619718309859152}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"26/71","percentage":36.619718309859152}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"27/71","percentage":38.028169014084504}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"27/71","percentage":38.028169014084504}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"28/71","percentage":39.436619718309856}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"28/71","percentage":39.436619718309856}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"29/71","percentage":40.845070422535208}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"29/71","percentage":40.845070422535208}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"30/71","percentage":42.25352112676056}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"30/71","percentage":42.25352112676056}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"31/71","percentage":43.661971830985912}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"31/71","percentage":43.661971830985912}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"32/71","percentage":45.070422535211264}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"32/71","percentage":45.070422535211264}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"33/71","percentage":46.478873239436616}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"33/71","percentage":46.478873239436616}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"34/71","percentage":47.887323943661968}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"34/71","percentage":47.887323943661968}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"35/71","percentage":49.29577464788732}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"35/71","percentage":49.29577464788732}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"36/71","percentage":50.70422535211268}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"36/71","percentage":50.70422535211268}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"37/71","percentage":52.112676056338032}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"37/71","percentage":52.112676056338032}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"38/71","percentage":53.521126760563384}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"38/71","percentage":53.521126760563384}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"39/71","percentage":54.929577464788736}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"39/71","percentage":54.929577464788736}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"40/71","percentage":56.338028169014088}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"40/71","percentage":56.338028169014088}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"41/71","percentage":57.74647887323944}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"41/71","percentage":57.74647887323944}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"42/71","percentage":59.154929577464792}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"42/71","percentage":59.154929577464792}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"43/71","percentage":60.563380281690144}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"43/71","percentage":60.563380281690144}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"44/71","percentage":61.971830985915496}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"44/71","percentage":61.971830985915496}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"45/71","percentage":63.380281690140848}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"45/71","percentage":63.380281690140848}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"46/71","percentage":64.788732394366193}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"46/71","percentage":64.788732394366193}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"47/71","percentage":66.197183098591552}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"47/71","percentage":66.197183098591552}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"48/71","percentage":67.605633802816897}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"48/71","percentage":67.605633802816897}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"49/71","percentage":69.014084507042256}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"49/71","percentage":69.014084507042256}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"50/71","percentage":70.422535211267601}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"50/71","percentage":70.422535211267601}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"51/71","percentage":71.83098591549296}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"51/71","percentage":71.83098591549296}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"52/71","percentage":73.239436619718305}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"52/71","percentage":73.239436619718305}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"53/71","percentage":74.647887323943664}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"53/71","percentage":74.647887323943664}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"54/71","percentage":76.056338028169009}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"54/71","percentage":76.056338028169009}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"55/71","percentage":77.464788732394368}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"55/71","percentage":77.464788732394368}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"56/71","percentage":78.873239436619713}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"56/71","percentage":78.873239436619713}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"57/71","percentage":80.281690140845072}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"57/71","percentage":80.281690140845072}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"58/71","percentage":81.690140845070417}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"58/71","percentage":81.690140845070417}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"59/71","percentage":83.098591549295776}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"59/71","percentage":83.098591549295776}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"60/71","percentage":84.507042253521121}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"60/71","percentage":84.507042253521121}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"61/71","percentage":85.91549295774648}}}Content-Length: 159
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"61/71","percentage":85.91549295774648}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"62/71","percentage":87.323943661971825}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"62/71","percentage":87.323943661971825}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"63/71","percentage":88.732394366197184}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"63/71","percentage":88.732394366197184}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"64/71","percentage":90.140845070422529}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"64/71","percentage":90.140845070422529}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"65/71","percentage":91.549295774647888}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"65/71","percentage":91.549295774647888}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"66/71","percentage":92.957746478873233}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"66/71","percentage":92.957746478873233}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"67/71","percentage":94.366197183098592}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"67/71","percentage":94.366197183098592}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"68/71","percentage":95.774647887323937}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"69/71","percentage":97.183098591549296}}}Content-Length: 160
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"70/71","percentage":98.591549295774641}}}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+>>>
+Content-Length: 231
+
+{"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp"},"position":{"line":14,"character":4}},"id":5,"jsonrpc":"2.0"}
+<<<
+Content-Length: 318
+
+{"id":5,"jsonrpc":"2.0","result":{"contents":{"kind":"markdown","value":"### function `digitalWrite`  \n\n---\n→ `void`  \nParameters:  \n- `uint8_t pin`\n- `uint8_t val`\n\n---\n```cpp\nvoid digitalWrite(uint8_t pin, uint8_t val)\n```"},"range":{"end":{"character":14,"line":14},"start":{"character":2,"line":14}}}}
+>>>
+Content-Length: 232
+
+{"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp"},"position":{"line":16,"character":23}},"id":6,"jsonrpc":"2.0"}
+<<<
+Content-Length: 38
+
+{"id":6,"jsonrpc":"2.0","result":null}
+>>>
+Content-Length: 492
+
+{"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp"},"range":{"start":{"line":16,"character":19},"end":{"line":16,"character":24}},"context":{"diagnostics":[{"range":{"start":{"line":16,"character":19},"end":{"line":16,"character":24}},"severity":1,"code":"undeclared_var_use","source":"clang","message":"Use of undeclared identifier 'HIGHT'"}]}},"id":7,"jsonrpc":"2.0"}
+<<<
+Content-Length: 424
+
+{"id":7,"jsonrpc":"2.0","result":[{"command":{"arguments":[{"file":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp","selection":{"end":{"character":24,"line":16},"start":{"character":19,"line":16}},"tweakID":"ExtractVariable"}],"command":"clangd.applyTweak","title":"Extract subexpression to variable"},"kind":"refactor","title":"Extract subexpression to variable"}]}
+>>>
+Content-Length: 244
+
+{"method":"textDocument/documentHighlight","params":{"textDocument":{"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp"},"position":{"line":16,"character":24}},"id":8,"jsonrpc":"2.0"}
+<<<
+Content-Length: 36
+
+{"id":8,"jsonrpc":"2.0","result":[]}
+>>>
+Content-Length: 492
+
+{"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp"},"range":{"start":{"line":16,"character":24},"end":{"line":16,"character":24}},"context":{"diagnostics":[{"range":{"start":{"line":16,"character":19},"end":{"line":16,"character":24}},"severity":1,"code":"undeclared_var_use","source":"clang","message":"Use of undeclared identifier 'HIGHT'"}]}},"id":9,"jsonrpc":"2.0"}
+<<<
+Content-Length: 36
+
+{"id":9,"jsonrpc":"2.0","result":[]}
+>>>
+Content-Length: 328
+
+{"method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp","version":2},"contentChanges":[{"range":{"start":{"line":16,"character":23},"end":{"line":16,"character":24}},"rangeLength":1,"text":""}]},"jsonrpc":"2.0"}Content-Length: 493
+
+{"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp"},"range":{"start":{"line":16,"character":23},"end":{"line":16,"character":23}},"context":{"diagnostics":[{"range":{"start":{"line":16,"character":19},"end":{"line":16,"character":24}},"severity":1,"code":"undeclared_var_use","source":"clang","message":"Use of undeclared identifier 'HIGHT'"}]}},"id":10,"jsonrpc":"2.0"}
+<<<
+Content-Length: 997
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[{"code":"drv_unknown_argument_with_suggestion","message":"Unknown argument '-mlongcalls'; did you mean '-mlong-calls'?","range":{"end":{"character":0,"line":0},"start":{"character":0,"line":0}},"severity":1,"source":"clang"},{"code":"drv_unknown_argument","message":"Unknown argument: '-mtext-section-literals'","range":{"end":{"character":0,"line":0},"start":{"character":0,"line":0}},"severity":1,"source":"clang"},{"code":"unknown_typename","message":"In included file: unknown type name '_read'\n\nC:\\Users\\vantr\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4/tools/sdk/libc/xtensa-lx106-elf/include\\sys/reent.h:195:36:\nnote: error occurred here","range":{"end":{"character":10,"line":0},"start":{"character":9,"line":0}},"severity":1,"source":"clang"}],"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp","version":2}}Content-Length: 393
+
+{"id":10,"jsonrpc":"2.0","result":[{"command":{"arguments":[{"file":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp","selection":{"end":{"character":23,"line":16},"start":{"character":23,"line":16}},"tweakID":"ExpandMacro"}],"command":"clangd.applyTweak","title":"Expand macro 'HIGH'"},"kind":"refactor","title":"Expand macro 'HIGH'"}]}
+>>>
+Content-Length: 307
+
+{"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp"},"range":{"start":{"line":16,"character":23},"end":{"line":16,"character":23}},"context":{"diagnostics":[]}},"id":11,"jsonrpc":"2.0"}
+<<<
+Content-Length: 393
+
+{"id":11,"jsonrpc":"2.0","result":[{"command":{"arguments":[{"file":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp","selection":{"end":{"character":23,"line":16},"start":{"character":23,"line":16}},"tweakID":"ExpandMacro"}],"command":"clangd.applyTweak","title":"Expand macro 'HIGH'"},"kind":"refactor","title":"Expand macro 'HIGH'"}]}
+>>>
+Content-Length: 1132
+
+{"method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp","version":3},"contentChanges":[{"text":"#include \u003cArduino.h\u003e\n#line 1 \"C:\\\\Users\\\\vantr\\\\AppData\\\\Local\\\\Temp\\\\.arduinoIDE-unsaved2021211-7092-1oxrxdk.4089\\\\sketch_mar11a\\\\sketch_mar11a.ino\"\n#line 1 \"C:\\\\Users\\\\vantr\\\\AppData\\\\Local\\\\Temp\\\\.arduinoIDE-unsaved2021211-7092-1oxrxdk.4089\\\\sketch_mar11a\\\\sketch_mar11a.ino\"\nvoid setup();\n#line 6 \"C:\\\\Users\\\\vantr\\\\AppData\\\\Local\\\\Temp\\\\.arduinoIDE-unsaved2021211-7092-1oxrxdk.4089\\\\sketch_mar11a\\\\sketch_mar11a.ino\"\nvoid loop();\n#line 1 \"C:\\\\Users\\\\vantr\\\\AppData\\\\Local\\\\Temp\\\\.arduinoIDE-unsaved2021211-7092-1oxrxdk.4089\\\\sketch_mar11a\\\\sketch_mar11a.ino\"\nvoid setup() {\n  // put your setup code here, to run once:\n  pinMode(16, OUTPUT);\n}\n\nvoid loop() {\n  // put your main code here, to run repeatedly:\n  digitalWrite(16, LOW);\n  delay(1000);\n  digitalWrite(16, HIGH);\n  delay(1000);\n}\n\n"}]},"jsonrpc":"2.0"}Content-Length: 232
+
+{"method":"textDocument/hover","params":{"textDocument":{"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp"},"position":{"line":11,"character":0}},"id":12,"jsonrpc":"2.0"}
+<<<
+Content-Length: 39
+
+{"id":12,"jsonrpc":"2.0","result":null}
+>>>
+Content-Length: 204
+
+{"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///C:/Users/vantr/AppData/Local/Temp/arduino-language-server996753751/sketch/sketch_mar11a.ino.cpp"}},"id":13,"jsonrpc":"2.0"}
+<<<
+Content-Length: 779
+
+{"id":13,"jsonrpc":"2.0","result":[{"kind":12,"name":"setup","range":{"end":{"character":12,"line":3},"start":{"character":0,"line":3}},"selectionRange":{"end":{"character":10,"line":3},"start":{"character":5,"line":3}}},{"kind":12,"name":"loop","range":{"end":{"character":11,"line":5},"start":{"character":0,"line":5}},"selectionRange":{"end":{"character":9,"line":5},"start":{"character":5,"line":5}}},{"kind":12,"name":"setup","range":{"end":{"character":1,"line":10},"start":{"character":0,"line":7}},"selectionRange":{"end":{"character":10,"line":7},"start":{"character":5,"line":7}}},{"kind":12,"name":"loop","range":{"end":{"character":1,"line":18},"start":{"character":0,"line":12}},"selectionRange":{"end":{"character":9,"line":12},"start":{"character":5,"line":12}}}]}
