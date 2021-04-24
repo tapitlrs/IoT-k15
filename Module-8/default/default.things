@@ -1,0 +1,9 @@
+Bridge mqtt:broker:hivemqbroker [ host="localhost", secure=false ]
+{
+    Thing topic nodemcu
+    {
+        Channels:
+            Type switch : light [ stateTopic="light/state", on="ON", off="OFF", commandTopic="light/command", on="abc", off="def"]
+            Type number : temperature [ stateTopic="temperature/state" ]
+    }
+}

@@ -1,0 +1,2 @@
+bai1: Ở trạng thái mặc định, led 16 sẽ nhấp nháy với chu kì 0.5s, led số 2 sẽ sáng. Khi nhấn button --> thay đổi trạng thái led 2, khi nhấn giữ button trong vòng 2s --> thay đổi chu kì nhấp nhảy của led 16, nếu 0.5s --> 1s, nếu 1s --> 0.5s. Mỗi lần thao tác thì in lên Serial trạng thái của led 2 và chu kì của led 16. Lưu ý là sử dụng interrupt
+bai2: Viết chương trình để nhận dữ liệu từ Serial monitor và điều khiển led như sau: LED_ON --> sáng led; LED_OFF --> tắt led, nếu gửi sai chuỗi thì in lên serial là "Invalid string"
