@@ -1,0 +1,7 @@
+sitemap demo label="My home automation" {
+    Frame label="Control" {
+        Switch item=Kitchen_Light
+        Text item=Livingroom_Temperature
+        Slider item=AirConditioning
+    }
+}

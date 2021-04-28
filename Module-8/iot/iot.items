@@ -1,0 +1,3 @@
+Switch Kitchen_Light "Kitchen Light" <light> {channel="mqtt:topic:MyMQTTBroker:LivingRoom:PowerSwitch1" }
+Number Livingroom_Temperature "Temperature [%.1f °C]" <temperature>
+Dimmer AirConditioning "Air"

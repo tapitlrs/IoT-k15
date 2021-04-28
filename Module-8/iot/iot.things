@@ -1,0 +1,8 @@
+Bridge mqtt:broker:MyMQTTBroker [ host="192.168.2.29", secure=false, username="", password=""] {
+  Thing topic LivingRoom "Light" @ "Sonoff" {
+    Channels:
+      Type switch : PowerSwitch1  [ stateTopic="stat/sonoff_dual/POWER1" , commandTopic="cmnd/sonoff_dual/POWER1", on="ON", off="OFF"]
+      Type switch : PowerSwitch2  [ stateTopic="stat/sonoff_dual/POWER2" , commandTopic="cmnd/sonoff_dual/POWER2", on="ON", off="OFF"]
+      Type string : Version [stateTopic="stat/sonoff_dual/STATUS2", transformationPattern="JSONPATH:$.StatusFWR.Version"]
+      }
+}
